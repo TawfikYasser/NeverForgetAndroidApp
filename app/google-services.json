@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "393771800562",
+    "firebase_url": "https://never-forget-38892.firebaseio.com",
+    "project_id": "never-forget-38892",
+    "storage_bucket": "never-forget-38892.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393771800562:android:bb3cfc7e65e512cdf0fd6b",
+        "android_client_info": {
+          "package_name": "com.elanssary.neverforget"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393771800562-iil2qp7evvejsu6adl41ea5lnq6bquhk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elanssary.neverforget",
+            "certificate_hash": "6a98911317b73e0e0d25be5a26c9b71b7f2090f5"
+          }
+        },
+        {
+          "client_id": "393771800562-j85qg40n3l9abdvgb0ufvv2voh8uuv1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsvBdjtoH-KOMprtcqLh9o24qKx4WC6zg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393771800562-j85qg40n3l9abdvgb0ufvv2voh8uuv1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

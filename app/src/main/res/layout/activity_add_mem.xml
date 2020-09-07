@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddMem">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:background="@color/primaryTitleColorNight"
+
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/toolbar_addmem"
+                android:tooltipText="Toolbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:elevation="2dp"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:clickable="true"
+                    android:background="@drawable/draw_ripple"
+                    android:id="@+id/back_addmem"
+                    android:tooltipText="Back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:layout_centerVertical="true"/>
+
+
+                <TextView
+                    android:id="@+id/mem_txt"
+                    android:textColor="@color/primaryTitleColor"
+                    android:fontFamily="@font/mulibold"
+                    android:textSize="20sp"
+                    android:tooltipText="Add Memory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Add a new memory"
+                    />
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_margin="16dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/title_mem"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:background="#ccc"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <Button
+                android:id="@+id/choose_img_mem"
+                android:textAllCaps="false"
+                android:text="Choose a Photo"
+                android:layout_margin="16dp"
+                app:icon="@drawable/ic_add_a_photo_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"/>
+            <View
+                android:background="#ccc"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <ImageView
+                android:id="@+id/record_mem"
+                android:layout_width="80dp"
+                android:src="@drawable/rec_base"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+            <Chronometer
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:textColor="@color/primaryTitleColor"
+                android:id="@+id/record_timer"
+                android:fontFamily="@font/mulibold" />
+            <TextView
+                android:layout_margin="16dp"
+                android:fontFamily="@font/mulireg"
+                android:id="@+id/rec_status_txt"
+                android:text="Recording Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="#ccc"/>
+            <Button
+                android:textAlignment="center"
+                android:gravity="center"
+                android:id="@+id/save_btn"
+                android:fontFamily="@font/mulibold"
+                android:layout_margin="16dp"
+                android:textAllCaps="false"
+                android:text="Save"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

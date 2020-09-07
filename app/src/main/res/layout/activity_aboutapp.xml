@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aboutapp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:background="@color/primaryTitleColorNight"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/toolbar_about"
+                android:tooltipText="Toolbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:elevation="2dp"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:clickable="true"
+                    android:background="@drawable/draw_ripple"
+                    android:id="@+id/back_about"
+                    android:tooltipText="Back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:layout_centerVertical="true"/>
+
+
+                <TextView
+                    android:id="@+id/mem_txt_about"
+                    android:textColor="@color/primaryTitleColor"
+                    android:fontFamily="@font/mulibold"
+                    android:textSize="20sp"
+                    android:tooltipText="About"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="About App"
+                    />
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <TextView
+            android:text="Never forget ia an app, allow you to save and record all the important notes and important things that you may forget, you can type and make a photo and record a voice note for that."
+            android:layout_margin="20dp"
+            android:fontFamily="@font/mulireg"
+            android:id="@+id/txt_about"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="لا تنس أبدًا هو تطبيق ، تسمح لك بحفظ وتسجيل جميع الملاحظات المهمة والأشياء المهمة التي قد تنسىها ، يمكنك كتابة وإنشاء صورة وتسجيل ملاحظة صوتية لذلك."
+            android:layout_margin="20dp"
+            android:fontFamily="@font/mulireg"
+            android:id="@+id/txt_about1_1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:text="To use the app, first go to Add a new memory tab, type the title, choose an image, record a voice by clicking on the play button say what you want, then press again on the button, wait a seconds to save the voice the database, then press save, If you want to see your records, go to Display all memories, you wil see each one title, image and record, If you want to search for a specific memory go to Search for a memory and type the title of the memory. Also you can change app language from English to Arabic."
+            android:layout_margin="20dp"
+            android:fontFamily="@font/mulireg"
+            android:gravity="center"
+            android:id="@+id/text_about2"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="لاستخدام التطبيق ، انتقل أولاً إلى إضافة علامة تبويب جديدة للذاكرة ، واكتب العنوان ، واختر صورة ، وسجل صوتًا بالنقر على زر التشغيل ، ثم قل ما تريد ، ثم اضغط مرة أخرى على الزر ، وانتظر ثوانٍ لحفظ الصوت قاعدة البيانات ، ثم اضغط على حفظ ، إذا كنت ترغب في رؤية سجلاتك ، فانتقل إلى عرض كل الذكريات ، سترى كل عنوان وصورة وسجل واحد ، إذا كنت تريد البحث عن ذاكرة معينة ، فانتقل إلى البحث عن ذاكرة واكتب عنوان الذاكرة. كما يمكنك تغيير لغة التطبيق من الإنجليزية إلى العربية."
+            android:layout_margin="20dp"
+            android:fontFamily="@font/mulireg"
+            android:gravity="center"
+            android:id="@+id/text_about2_2"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:text="More Features will added soon!"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/mulireg"
+            android:gravity="center"
+            android:id="@+id/text_about3"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="مميزات اكثر سيتم إضافتها لاحقاَ"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/mulireg"
+            android:gravity="center"
+            android:id="@+id/text_about3_3"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:text="v1.1"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/mulireg"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+
+            android:textColor="@color/primaryTitleColor"
+            android:text="Never Forget"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/mulibold"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView_about"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-1371467476136389/1328282242">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+</ScrollView>
